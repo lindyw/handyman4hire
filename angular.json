@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "183cmJoyce": {
+    "Handyman4HireGalway": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -28,12 +28,19 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/tms_presets.js"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "183cmJoyce:build:production"
+              "browserTarget": "Handyman4HireGalway:build:production"
             },
             "development": {
-              "browserTarget": "183cmJoyce:build:development"
+              "browserTarget": "Handyman4HireGalway:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "183cmJoyce:build"
+            "browserTarget": "Handyman4HireGalway:build"
           }
         },
         "test": {
@@ -101,11 +108,13 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "183cmJoyce"
+  "defaultProject": "Handyman4HireGalway"
 }
