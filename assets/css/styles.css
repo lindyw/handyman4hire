@@ -535,6 +535,7 @@ a:hover {
 	margin-bottom: 4rem;
 }
 
+
 .basic-1 h2 {
 	margin-bottom: 1.75rem;
 }
@@ -1281,7 +1282,7 @@ a:hover {
 	/* end of header */
 
 
-	/* Services */
+	/* Services */b
 	.cards-1 .card {
 		width: 310px;
 	}
@@ -1309,6 +1310,7 @@ a:hover {
 
 	.basic-2 .image-container {
 		text-align: right;
+		margin-block: 8rem;
 	}
 	/* end of details 2 */
 
